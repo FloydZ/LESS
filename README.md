@@ -126,9 +126,9 @@ REF: (Ryzen 7600X)
 |cat_5_SHORT_SIG | 69411.23 | 33139406.09 | 33322599.90|
 
 NEON: (M1 MacBook Pro)
-|name            | KeyGen | Sign | Vrfy|
+|Name            | KeyGen | Sign | Vrfy|
 |----------------|--------|------|-----|
-||cat_1_BALANCED | 1889.76 | 539753.72 | 557659.60|
+|cat_1_BALANCED | 1889.76 | 539753.72 | 557659.60|
 |cat_1_INTERMEDIATE | 5214.91 | 532322.96 | 551006.21|
 |cat_1_SHORT_SIG | 11877.07 | 431441.03 | 446850.50|
 |cat_3_BALANCED | 6135.51 | 5264174.06 | 5393275.09|
