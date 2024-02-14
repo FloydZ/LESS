@@ -364,7 +364,7 @@ void info(void){
     fprintf(stderr,"Fixed weight challenge vector: %d rounds, weight %d \n",T,W);
     fprintf(stderr,"Private key: %luB\n", sizeof(prikey_t));
     fprintf(stderr,"Public key %luB, %.3f kiB\n", sizeof(pubkey_t), ((float) sizeof(pubkey_t))/1024);
-    fprintf(stderr,"Signature: %luB, %.3f kiB\n", sizeof(sig_t), ((float) sizeof(sig_t))/1024);
+    fprintf(stderr,"Signature: %luB, %.3f kiB\n", sizeof(sign_t), ((float) sizeof(sign_t))/1024);
 
 }
 
@@ -372,7 +372,7 @@ void info(void){
 int LESS_sign_verify_test(void){
     pubkey_t pk = {0};
     prikey_t sk = {0};
-    sig_t signature;
+    sign_t signature;
     char message[8] = "Signme!";
     LESS_keygen(&sk,&pk);
     LESS_sign(&sk,message,8,&signature);
@@ -417,7 +417,7 @@ int LESS_sign_verify_test_multiple(void){
             return -1;
         }
         ASSERT(mlen1 == msg_len);
-        printf("OK: %i\n", i);
+        printf("OK: %zu\n", i);
 
         ret |= ret_val;
     }

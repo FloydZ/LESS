@@ -151,7 +151,7 @@ void info(void){
     fprintf(stderr,"Fixed weight challenge vector: %d rounds, weight %d \n",T,W);
     fprintf(stderr,"Private key: %luB\n", sizeof(prikey_t));
     fprintf(stderr,"Public key %luB\n", sizeof(pubkey_t));
-    fprintf(stderr,"Signature: %luB, %f\n", sizeof(sig_t), ((float) sizeof(sig_t))/1024);
+    fprintf(stderr,"Signature: %luB, %f\n", sizeof(sign_t), ((float) sizeof(sign_t))/1024);
 
 }
 
