@@ -37,7 +37,7 @@ jobs:
       run: cmake --build ${{github.workspace}}/build --config Debug
 
     - name: Test
-      working-directory: ${{github.workspace}}/Reference_Implementation/build
+      working-directory: ${{github.workspace}}/build
       run: |
         ./LESS_benchmark_cat_1_BALANCED
         ./LESS_benchmark_cat_1_INTERMEDIATE
